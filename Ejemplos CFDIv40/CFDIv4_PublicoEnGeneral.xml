@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="Serie" Folio="2080427802" Fecha="2022-08-01T18:31:50" FormaPago="99" CondicionesDePago="CondicionesDePago" SubTotal="200" Moneda="MXN" TipoCambio="1" Total="180" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="20000"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="XAXX010101000" Nombre="CLIENTE" DomicilioFiscalReceptor="20000" RegimenFiscalReceptor="616" UsoCFDI="S01" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="50211503" NoIdentificacion="UT421511" Cantidad="1" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Cigarros" ValorUnitario="200.00" Importe="200.00" ObjetoImp="02">
+            <cfdi:Impuestos>
+                <cfdi:Retenciones>
+                    <cfdi:Retencion Base="200" Impuesto="001" TipoFactor="Tasa" TasaOCuota="0.100000" Importe="20" />
+                </cfdi:Retenciones>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+    <cfdi:Impuestos TotalImpuestosRetenidos="20">
+        <cfdi:Retenciones>
+            <cfdi:Retencion Impuesto="001" Importe="20" />
+        </cfdi:Retenciones>
+    </cfdi:Impuestos>
+</cfdi:Comprobante>
