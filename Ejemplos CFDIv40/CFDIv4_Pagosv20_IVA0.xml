@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:pago20="http://www.sat.gob.mx/Pagos20"
+   xmlns:cfdi="http://www.sat.gob.mx/cfd/4" Moneda="XXX" Total="0" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd  http://www.sat.gob.mx/Pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd" Exportacion="01" TipoDeComprobante="P" SubTotal="0" LugarExpedicion="29960" Fecha="2022-06-17T07:50:18" Folio="922" Version="4.0">
+   <cfdi:Emisor Rfc="IIA040805DZ4" Nombre="INDISTRIA ILUMINADORA DE ALMACENES" RegimenFiscal="626" />
+   <cfdi:Receptor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" DomicilioFiscalReceptor="26015" RegimenFiscalReceptor="603" UsoCFDI="CP01" />
+   <cfdi:Conceptos>
+      <cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago" ValorUnitario="0" Importe="0" ObjetoImp="01" />
+   </cfdi:Conceptos>
+   <cfdi:Complemento>
+      <pago20:Pagos xmlns:pago20="http://www.sat.gob.mx/Pagos20" Version="2.0">
+         <pago20:Totales TotalTrasladosBaseIVA0="1500" TotalTrasladosImpuestoIVA0="0" MontoTotalPagos="1740.00" />
+         <pago20:Pago FechaPago="2022-04-20T11:47:03" FormaDePagoP="03" MonedaP="MXN" TipoCambioP="1" Monto="1740.00">
+            <pago20:DoctoRelacionado IdDocumento="16c7d351-d88b-4b7e-bb6b-f8c3d5cc6cde" Folio="921" MonedaDR="MXN" EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="1740.00" ImpPagado="1740.00" ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+               <pago20:ImpuestosDR>
+                  <pago20:TrasladosDR>
+                     <pago20:TrasladoDR BaseDR="1500.00" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.000000" ImporteDR="0" />
+                  </pago20:TrasladosDR>
+               </pago20:ImpuestosDR>
+            </pago20:DoctoRelacionado>
+            <pago20:ImpuestosP>
+               <pago20:TrasladosP>
+                  <pago20:TrasladoP BaseP="1500" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.000000" ImporteP="0" />
+               </pago20:TrasladosP>
+            </pago20:ImpuestosP>
+         </pago20:Pago>
+      </pago20:Pagos>
+   </cfdi:Complemento>
+</cfdi:Comprobante>

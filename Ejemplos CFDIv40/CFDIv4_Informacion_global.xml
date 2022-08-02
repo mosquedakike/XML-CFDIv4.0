@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" Moneda="MXN" Total="551.00" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Exportacion="01" MetodoPago="PUE" TipoDeComprobante="I" SubTotal="475.00" FormaPago="03" LugarExpedicion="29960" Fecha="2022-08-01T11:41:08" Folio="919" Version="4.0">
+  <cfdi:InformacionGlobal Periodicidad="04" Meses="01" Año="2022" />
+  <cfdi:Emisor Rfc="IIA040805DZ4" Nombre="INDISTRIA ILUMINADORA DE ALMACENES" RegimenFiscal="626" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" DomicilioFiscalReceptor="29960" RegimenFiscalReceptor="616" UsoCFDI="S01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="TICKET0028" Cantidad="1" ClaveUnidad="ACT" Descripcion="Venta" ValorUnitario="150.0000" Importe="150.0000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="150.0000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="24.0000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="TICKET0029" Cantidad="1" ClaveUnidad="ACT" Descripcion="Venta" ValorUnitario="250.0000" Importe="250.0000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="250.0000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="40.0000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="01010101" NoIdentificacion="TICKET0031" Cantidad="1" ClaveUnidad="ACT" Descripcion="Venta" ValorUnitario="75.0000" Importe="75.0000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="75.0000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="12.0000" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="76.00">
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="475.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="76.00" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

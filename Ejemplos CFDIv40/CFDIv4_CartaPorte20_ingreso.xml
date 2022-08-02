@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20" xmlns:cfdi="http://www.sat.gob.mx/cfd/4" Moneda="MXN" Total="1680.00" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd  http://www.sat.gob.mx/CartaPorte20 http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte20.xsd" Exportacion="01" MetodoPago="PUE" TipoDeComprobante="I" SubTotal="1500.00" FormaPago="03" LugarExpedicion="29960" Fecha="2022-07-26T11:34:27" Folio="918" Version="4.0">
+  <cfdi:Emisor Rfc="IIA040805DZ4" Nombre="INDISTRIA ILUMINADORA DE ALMACENES" RegimenFiscal="626" />
+  <cfdi:Receptor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" DomicilioFiscalReceptor="26015" RegimenFiscalReceptor="603" UsoCFDI="G03" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="78101802" NoIdentificacion="781018001" Cantidad="1" ClaveUnidad="E48" Unidad="SERVICIO" Descripcion="FLETE" ValorUnitario="1500.0000" Importe="1500.0000" ObjetoImp="02">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="1500.0000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="240.0000" />
+        </cfdi:Traslados>
+        <cfdi:Retenciones>
+          <cfdi:Retencion Base="1500.0000" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.040000" Importe="60.0000" />
+        </cfdi:Retenciones>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosRetenidos="60.00" TotalImpuestosTrasladados="240.00">
+    <cfdi:Retenciones>
+      <cfdi:Retencion Impuesto="002" Importe="60.00" />
+    </cfdi:Retenciones>
+    <cfdi:Traslados>
+      <cfdi:Traslado Base="1500.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="240.00" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <cartaporte20:CartaPorte xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20" Version="2.0" TranspInternac="No" TotalDistRec="210">
+      <cartaporte20:Ubicaciones>
+        <cartaporte20:Ubicacion TipoUbicacion="Origen" RFCRemitenteDestinatario="EKU9003173C9" FechaHoraSalidaLlegada="2022-04-20T12:00:00">
+          <cartaporte20:Domicilio Calle="Fernando Leal Novelo" NumeroExterior="7" NumeroInterior="302" Colonia="2290" Localidad="09" Municipio="057" Estado="MEX" Pais="MEX" CodigoPostal="53100" />
+        </cartaporte20:Ubicacion>
+        <cartaporte20:Ubicacion TipoUbicacion="Destino" RFCRemitenteDestinatario="EKU9003173C9" FechaHoraSalidaLlegada="2022-04-20T12:00:00" DistanciaRecorrida="210">
+          <cartaporte20:Domicilio Calle="Real" NumeroExterior="1" Colonia="1003" Localidad="04" Municipio="006" Estado="QUE" Pais="MEX" CodigoPostal="76905" />
+        </cartaporte20:Ubicacion>
+      </cartaporte20:Ubicaciones>
+      <cartaporte20:Mercancias PesoBrutoTotal="1028" UnidadPeso="KGM" NumTotalMercancias="2">
+        <cartaporte20:Mercancia BienesTransp="10101603" Descripcion="Pavos vivos" Cantidad="50" ClaveUnidad="H87" PesoEnKg="550" />
+        <cartaporte20:Mercancia BienesTransp="10101604" Descripcion="Gansos vivos" Cantidad="70" ClaveUnidad="H87" PesoEnKg="478" />
+        <cartaporte20:Autotransporte PermSCT="TPAF01" NumPermisoSCT="PERM01">
+          <cartaporte20:IdentificacionVehicular ConfigVehicular="C2" PlacaVM="MHP5353" AnioModeloVM="2011" />
+          <cartaporte20:Seguros AseguraRespCivil="AXA" PolizaRespCivil="AXA29002" />
+        </cartaporte20:Autotransporte>
+      </cartaporte20:Mercancias>
+      <cartaporte20:FiguraTransporte>
+        <cartaporte20:TiposFigura TipoFigura="01" RFCFigura="GUHA880328F38" NumLicencia="LIC123" NombreFigura="ANDRES GUTIERREZ HERNANDEZ" />
+      </cartaporte20:FiguraTransporte>
+    </cartaporte20:CartaPorte>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

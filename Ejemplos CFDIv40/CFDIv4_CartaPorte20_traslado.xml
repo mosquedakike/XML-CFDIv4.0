@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20" Moneda="XXX" Total="0" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd  http://www.sat.gob.mx/CartaPorte20 http://www.sat.gob.mx/sitio_internet/cfd/CartaPorte/CartaPorte20.xsd" Exportacion="01" TipoDeComprobante="T" SubTotal="0" LugarExpedicion="26015" Fecha="2022-06-20T15:30:06" Folio="2040" Serie="EJEMPLOT" Version="4.0"
+    xmlns:cfdi="http://www.sat.gob.mx/cfd/4">
+    <cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601" />
+    <cfdi:Receptor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" DomicilioFiscalReceptor="26015" RegimenFiscalReceptor="601" UsoCFDI="S01" />
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="78101802" Cantidad="1" ClaveUnidad="E48" Unidad="SERVICIO" Descripcion="FLETE" ValorUnitario="0" Importe="0" ObjetoImp="01" />
+    </cfdi:Conceptos>
+    <cfdi:Complemento>
+        <cartaporte20:CartaPorte Version="2.0" TranspInternac="No" TotalDistRec="2"
+            xmlns:cartaporte20="http://www.sat.gob.mx/CartaPorte20">
+            <cartaporte20:Ubicaciones>
+                <cartaporte20:Ubicacion TipoUbicacion="Origen" IDUbicacion="OR101010" RFCRemitenteDestinatario="IIA040805DZ4" FechaHoraSalidaLlegada="2021-11-01T00:00:00">
+                    <cartaporte20:Domicilio Calle="calle" NumeroExterior="211" Colonia="0347" Localidad="23" Referencia="casa blanca 1" Municipio="004" Estado="COA" Pais="MEX" CodigoPostal="25350" />
+                </cartaporte20:Ubicacion>
+                <cartaporte20:Ubicacion TipoUbicacion="Destino" IDUbicacion="DE202020" RFCRemitenteDestinatario="IIA040805DZ4" FechaHoraSalidaLlegada="2021-11-01T00:00:00" DistanciaRecorrida="1">
+                    <cartaporte20:Domicilio Calle="calle" NumeroExterior="211" Colonia="0347" Localidad="23" Referencia="casa blanca 1" Municipio="004" Estado="COA" Pais="MEX" CodigoPostal="25350" />
+                </cartaporte20:Ubicacion>
+                <cartaporte20:Ubicacion TipoUbicacion="Destino" IDUbicacion="DE202021" RFCRemitenteDestinatario="IIA040805DZ4" FechaHoraSalidaLlegada="2021-11-01T00:00:00" DistanciaRecorrida="1">
+                    <cartaporte20:Domicilio Calle="calle" NumeroExterior="211" Colonia="0347" Localidad="23" Referencia="casa blanca 1" Municipio="004" Estado="COA" Pais="MEX" CodigoPostal="25350" />
+                </cartaporte20:Ubicacion>
+            </cartaporte20:Ubicaciones>
+            <cartaporte20:Mercancias PesoBrutoTotal="2.0" UnidadPeso="XBX" NumTotalMercancias="2">
+                <cartaporte20:Mercancia BienesTransp="11121900" Descripcion="Productos de perfumería" Cantidad="1.0" ClaveUnidad="XBX" MaterialPeligroso="Sí" CveMaterialPeligroso="M1267" Embalaje="4H2" PesoEnKg="1.0">
+                    <cartaporte20:CantidadTransporta Cantidad="1" IDOrigen="OR101010" IDDestino="DE202020" />
+                </cartaporte20:Mercancia>
+                <cartaporte20:Mercancia BienesTransp="11121900" Descripcion="Productos de perfumería" Cantidad="1.0" ClaveUnidad="XBX" MaterialPeligroso="Sí" CveMaterialPeligroso="M1267" Embalaje="4H2" PesoEnKg="1.0">
+                    <cartaporte20:CantidadTransporta Cantidad="1" IDOrigen="OR101010" IDDestino="DE202021" />
+                </cartaporte20:Mercancia>
+                <cartaporte20:Autotransporte PermSCT="TPAF01" NumPermisoSCT="NumPermisoSCT">
+                    <cartaporte20:IdentificacionVehicular ConfigVehicular="VL" PlacaVM="plac892" AnioModeloVM="2020" />
+                    <cartaporte20:Seguros AseguraRespCivil="SW Seguros" PolizaRespCivil="123456789" AseguraMedAmbiente="SW Seguros Ambientales" PolizaMedAmbiente="123456789" AseguraCarga="SW Seguros" />
+                    <cartaporte20:Remolques>
+                        <cartaporte20:Remolque SubTipoRem="CTR021" Placa="ABC123" />
+                    </cartaporte20:Remolques>
+                </cartaporte20:Autotransporte>
+            </cartaporte20:Mercancias>
+            <cartaporte20:FiguraTransporte>
+                <cartaporte20:TiposFigura TipoFigura="01" RFCFigura="VAAM130719H60" NumLicencia="a234567890" />
+            </cartaporte20:FiguraTransporte>
+        </cartaporte20:CartaPorte>
+    </cfdi:Complemento>
+</cfdi:Comprobante>
