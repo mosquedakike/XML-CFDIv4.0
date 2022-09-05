@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
+	xmlns:pago20="http://www.sat.gob.mx/Pagos20" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/Pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd" LugarExpedicion="66278" TipoDeComprobante="P" SubTotal="0" Total="0" Moneda="XXX" Fecha="2022-09-04T14:40:35" Serie="P" Folio="413" Version="4.0" Exportacion="01">
+	<cfdi:Emisor Rfc="EKU9003173C9" Nombre="ESCUELA KEMPER URGATE" RegimenFiscal="601"/>
+	<cfdi:Receptor Rfc="IPC121114LM7" Nombre="INNOVACION PROACTIVA COMERCIAL" UsoCFDI="CP01" DomicilioFiscalReceptor="72020" RegimenFiscalReceptor="601"/>
+	<cfdi:Conceptos>
+		<cfdi:Concepto ClaveProdServ="84111506" Cantidad="1" ClaveUnidad="ACT" Descripcion="Pago" ValorUnitario="0" Importe="0" ObjetoImp="01">
+		</cfdi:Concepto>
+	</cfdi:Conceptos>
+	<cfdi:Complemento>
+		<pago20:Pagos Version="2.0">
+			<pago20:Totales TotalRetencionesIVA="0.00" TotalRetencionesISR="0.00" TotalRetencionesIEPS="0.00" TotalTrasladosBaseIVA16="306197.87" TotalTrasladosImpuestoIVA16="48991.65" TotalTrasladosBaseIVA8="0.00" TotalTrasladosImpuestoIVA8="0.00" TotalTrasladosBaseIVA0="0.00" TotalTrasladosImpuestoIVA0="0.00" TotalTrasladosBaseIVAExento="0.00" MontoTotalPagos="381732.68"/>
+			<pago20:Pago FechaPago="2022-08-25T08:18:45" FormaDePagoP="03" MonedaP="MXN" TipoCambioP="1" Monto="272200.08" NumOperacion="BNET01002208250031244830">
+				<pago20:DoctoRelacionado IdDocumento="ef967a94-c53f-41fe-93e9-8f61590bfd45" Serie="B" Folio="871" MonedaDR="USD" EquivalenciaDR="0.050300" NumParcialidad="1" ImpSaldoAnt="13664.80" ImpPagado="13664.80" ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+					<pago20:ImpuestosDR>
+						<pago20:TrasladosDR>
+							<pago20:TrasladoDR BaseDR="11780.00" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="1884.80"/>
+						</pago20:TrasladosDR>
+					</pago20:ImpuestosDR>
+				</pago20:DoctoRelacionado>
+				<pago20:ImpuestosP>
+					<pago20:TrasladosP>
+						<pago20:TrasladoP BaseP="234194.83" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.160000" ImporteP="37471.17"/>
+					</pago20:TrasladosP>
+				</pago20:ImpuestosP>
+			</pago20:Pago>
+			<pago20:Pago FechaPago="2022-08-25T08:20:25" FormaDePagoP="03" MonedaP="MXN" TipoCambioP="1" Monto="27214.03" NumOperacion="BNET01002208250031244933">
+				<pago20:DoctoRelacionado IdDocumento="716adf55-bd6e-4830-843b-8c6edf99bab7" Serie="B" Folio="870" MonedaDR="MXN" EquivalenciaDR="1" NumParcialidad="1" ImpSaldoAnt="1366.48" ImpPagado="1366.48" ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+					<pago20:ImpuestosDR>
+						<pago20:TrasladosDR>
+							<pago20:TrasladoDR BaseDR="1178.00" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="188.48"/>
+						</pago20:TrasladosDR>
+					</pago20:ImpuestosDR>
+				</pago20:DoctoRelacionado>
+				<pago20:ImpuestosP>
+					<pago20:TrasladosP>
+						<pago20:TrasladoP BaseP="1178.00" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.160000" ImporteP="188.48"/>
+					</pago20:TrasladosP>
+				</pago20:ImpuestosP>
+			</pago20:Pago>
+			<pago20:Pago FechaPago="2022-08-25T08:22:02" FormaDePagoP="03" MonedaP="MXN" TipoCambioP="1" Monto="82318.57" NumOperacion="BNET01002208250031245017">
+				<pago20:DoctoRelacionado IdDocumento="515c9546-48ea-4b6d-aa1d-7e2312340c75" Serie="B" Folio="869" MonedaDR="USD" EquivalenciaDR="0.050300" NumParcialidad="1" ImpSaldoAnt="4132.50" ImpPagado="4132.50" ImpSaldoInsoluto="0.00" ObjetoImpDR="02">
+					<pago20:ImpuestosDR>
+						<pago20:TrasladosDR>
+							<pago20:TrasladoDR BaseDR="3562.50" ImpuestoDR="002" TipoFactorDR="Tasa" TasaOCuotaDR="0.160000" ImporteDR="570.00"/>
+						</pago20:TrasladosDR>
+					</pago20:ImpuestosDR>
+				</pago20:DoctoRelacionado>
+				<pago20:ImpuestosP>
+					<pago20:TrasladosP>
+						<pago20:TrasladoP BaseP="70825.04" ImpuestoP="002" TipoFactorP="Tasa" TasaOCuotaP="0.160000" ImporteP="11332.00"/>
+					</pago20:TrasladosP>
+				</pago20:ImpuestosP>
+			</pago20:Pago>
+		</pago20:Pagos>
+	</cfdi:Complemento>
+</cfdi:Comprobante>
