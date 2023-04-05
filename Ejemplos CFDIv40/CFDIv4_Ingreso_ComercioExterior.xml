@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4"
    xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd http://www.sat.gob.mx/donat http://www.sat.gob.mx/sitio_internet/cfd/donat/donat11.xsd" CondicionesDePago="Anticipo + remanente ants emba" Exportacion="02" Fecha="2022-07-04T10:42:43" Folio="0100000238" FormaPago="99" LugarExpedicion="36275" MetodoPago="PPD" Moneda="USD" Serie="01" SubTotal="0.01" TipoCambio="21.167500" TipoDeComprobante="I" Total="0.01" Version="4.0">
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd http://www.sat.gob.mx/pagos20 http://www.sat.gob.mx/sitio_internet/cfd/Pagos/Pagos20.xsd http://www.sat.gob.mx/ComercioExterior11 http://www.sat.gob.mx/sitio_internet/cfd/ComercioExterior11/ComercioExterior11.xsd http://www.sat.gob.mx/donat http://www.sat.gob.mx/sitio_internet/cfd/donat/donat11.xsd" CondicionesDePago="Anticipo + remanente ants emba" Exportacion="02" Fecha="2022-07-04T10:42:43" Folio="0100000238" FormaPago="99" LugarExpedicion="36275" MetodoPago="PPD" Moneda="USD" Serie="01" SubTotal="0.01" TipoCambio="18.8977" TipoDeComprobante="I" Total="0.01" Version="4.0">
    <cfdi:Emisor Nombre="INNOVACION VALOR Y DESARROLLO" RegimenFiscal="601" Rfc="IVD920810GU2"/>
    <cfdi:Receptor DomicilioFiscalReceptor="36275" Nombre="TOPSITES CONSTRUCTIONS" NumRegIdTrib="007059639" RegimenFiscalReceptor="616" ResidenciaFiscal="USA" Rfc="XEXX010101000" UsoCFDI="S01"/>
    <cfdi:Conceptos>
@@ -19,7 +19,7 @@
       </cfdi:Traslados>
    </cfdi:Impuestos>
    <cfdi:Complemento>
-      <cce11:ComercioExterior xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" CertificadoOrigen="0" ClaveDePedimento="A1" Incoterm="DDP" Subdivision="0" TipoCambioUSD="21.167500" TipoOperacion="2" TotalUSD="0.01" Version="1.1">
+      <cce11:ComercioExterior xmlns:cce11="http://www.sat.gob.mx/ComercioExterior11" CertificadoOrigen="0" ClaveDePedimento="A1" Incoterm="DDP" Subdivision="0" TipoCambioUSD="18.8977" TipoOperacion="2" TotalUSD="0.01" Version="1.1">
          <cce11:Emisor>
             <cce11:Domicilio Calle="Avenida libre comercio" NumeroExterior="137" Pais="MEX" CodigoPostal="36275" Estado="GUA" Municipio="037" Colonia="0001"/>
          </cce11:Emisor>
